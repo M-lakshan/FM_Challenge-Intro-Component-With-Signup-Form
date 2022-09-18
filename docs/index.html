@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="./css/styles.css">
+        <title>Intro Component with Sign-Up a form</title>
+    </head>
+
+    <body>
+        <main>
+            <h2>Learn to code by watching others</h2>
+
+            <p class="intro_desc">
+                See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.
+            </p>
+
+            <p class="subscrib_banner"><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+          
+            <form action="#" class="">
+                <input type="text" name="user_f_name" id="user_f_name" class="user_text_input" placeholder="First Name">
+                <div class="errors">
+                    <span class="error_txt user_f_n_error">First Name cannot be empty</span>
+                    <span class="material-symbols-outlined">error</span>
+                </div>
+                <input type="text" name="user_l_name" id="user_l_name" class="user_text_input" placeholder="Last Name">
+                <div class="errors">
+                    <span class="error_txt user_l_n_error">Last Name cannot be empty</span>
+                    <span class="material-symbols-outlined">error</span>
+                </div>
+                <input type="email" name="user_email" id="user_email" class="user_special_input" placeholder="Email Address">
+                <div class="errors">
+                    <span class="error_txt user_em_error">Looks like this is not an email</span>
+                    <span class="material-symbols-outlined">error</span>
+                </div>
+                <input type="password" name="user_pwd" id="user_pwd" class="user_special_input" placeholder="Password">
+                <div class="errors">
+                    <span class="error_txt user_pwd_error">Password cannot be empty</span>
+                    <span class="material-symbols-outlined">error</span>
+                    <span id="pwd_visibility" class="material-symbols-outlined">visibility</span>
+                </div>
+                <button id="submit_btn" type="submit">CLAIM YOUR FREE TRIAL</button>
+                <p class="conclution">
+                    By clicking the button, you are agreeing to our <span><a href="#" id="t_n_c_page">Terms and Services</a></span>
+                </p>
+            </form>
+        </main>
+        <footer>
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                Coded by <a href="#https://github.com/M-lakshan">M-Lakshan</a>.
+            </div>
+        </footer>
+  </body>
+
+  <script src="./js/script.js"></script>
+
+</html>

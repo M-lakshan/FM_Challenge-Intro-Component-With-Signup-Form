@@ -1,0 +1,61 @@
+header {
+    // display: block;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 5px;
+
+    @media screen and (min-width: 1440px) {
+        bottom: 20px;
+    }
+
+    .attribution {
+        text-align: center;
+        padding-top: 24px;
+        opacity: 0%;
+        transition: 250ms ease;
+        margin-top: -45px;
+        color: $Magenta;
+
+        &:hover {
+            cursor: pointer;
+            transition: 250ms ease;
+            font-size: 12px;
+            padding-top: 0px;
+            height: 24px;
+            opacity: 100%;
+        }
+    }
+
+    .attribution a {
+        color: $White;
+    }
+
+    @media screen and (min-width: 1080px) {
+
+        .attribution {
+            text-align: center;
+            padding-top: 35px;
+            height: 20px;
+            opacity: 0%;
+            transition: 250ms ease;
+
+            &:hover {
+                cursor: pointer;
+                transition: 250ms ease;
+                font-size: 12px;
+                margin-bottom: 5px;
+                opacity: 100%;
+            }
+        }
+
+        .attribution a {
+            color: $White;
+        }
+    }
+}
